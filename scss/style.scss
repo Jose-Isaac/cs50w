@@ -1,17 +1,80 @@
 $color_background: #651fff;
 
+%invert-text_color-background_color {
+    background-color: white;
+    color: $color_background; 
+}
+
 html, body {
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100%;
     background-color: $color_background;
-    
-    
 }
 
+#navDrop {
+    background-color: $color_background;
+    color: white;
+}
+
+#navDrop > a:hover {
+    @extend %invert-text_color-background_color;
+}
 .container-fluid {
     overflow: hidden;
+}
+
+.card {
+    margin-top: 3%;
+    border: none;
+}
+
+.card .card-header {
+    background-color: $color_background;
+    color: white;
+    text-transform: uppercase;
+    border-left: 2px solid white;
+    border-right: 1px solid white;
+}
+
+.row {
+    justify-content: center;
+    .card {
+        margin-top: 9%;
+        height: 96%;
+        
+        .card-body {
+            h4 {
+                color: white;
+                background-color: $color_background;
+                padding: 2%;
+                text-transform: uppercase;
+            }
+            
+            h6 {
+                color: gray;
+                border-bottom: 1px solid gray;
+                padding: 2%;
+                padding-left: 0;
+                width: 90%;
+            }
+            
+            p {
+                margin-top: 3%;
+                text-align: justify;
+            }
+            
+            a {
+                text-align:justify-all;
+            }
+        }
+    }
+}
+
+.border-b {
+    padding-bottom: 3%;
+    border-bottom: 1px solid white;
 }
 
 @media (min-width:1157px) {
@@ -27,15 +90,20 @@ html, body {
     color: white;
     h1 {
          span {
-            padding: 0 .5% 0 .5%;
-            background-color: white;
-            color: $color_background;   
+            @extend %invert-text_color-background_color;
+            padding: .3% 1%;  
         }
     }
     .container {
         padding: 5%;
         text-align: justify;
     }
+}
+
+#title-header {
+    @extend %invert-text_color-background_color;
+    width: 40%;
+    margin-top: 5%;
 }
 
 @media (max-width:768px) {

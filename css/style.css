@@ -1,3 +1,8 @@
+#title-header, .frase-entrada h1 span, #navDrop > a:hover {
+  background-color: white;
+  color: #651fff;
+}
+
 html, body {
   padding: 0;
   margin: 0;
@@ -6,8 +11,59 @@ html, body {
   background-color: #651fff;
 }
 
+#navDrop {
+  background-color: #651fff;
+  color: white;
+}
+
 .container-fluid {
   overflow: hidden;
+}
+
+.card {
+  margin-top: 3%;
+  border: none;
+}
+
+.card .card-header {
+  background-color: #651fff;
+  color: white;
+  text-transform: uppercase;
+  border-left: 2px solid white;
+  border-right: 1px solid white;
+}
+
+.row {
+  justify-content: center;
+}
+.row .card {
+  margin-top: 9%;
+  height: 96%;
+}
+.row .card .card-body h4 {
+  color: white;
+  background-color: #651fff;
+  padding: 2%;
+  text-transform: uppercase;
+}
+.row .card .card-body h6 {
+  color: gray;
+  border-bottom: 1px solid gray;
+  padding: 2%;
+  padding-left: 0;
+  width: 90%;
+}
+.row .card .card-body p {
+  margin-top: 3%;
+  text-align: justify;
+}
+.row .card .card-body a {
+  text-align: justify-all;
+}
+
+.border-b {
+  padding-bottom: 3%;
+  border-bottom: 1px solid white;
 }
 
 @media (min-width: 1157px) {
@@ -22,13 +78,16 @@ html, body {
   color: white;
 }
 .frase-entrada h1 span {
-  padding: 0 0.5% 0 0.5%;
-  background-color: white;
-  color: #651fff;
+  padding: 0.3% 1%;
 }
 .frase-entrada .container {
   padding: 5%;
   text-align: justify;
+}
+
+#title-header {
+  width: 40%;
+  margin-top: 5%;
 }
 
 @media (max-width: 768px) {
