@@ -1,57 +1,116 @@
-html, body {
+#navDrop > a:hover, .frase-entrada h1 span, #title-header {
+  background-color: white;
+  color: #651fff; }
+
+html,
+body {
   padding: 0;
   margin: 0;
   width: 100%;
   height: 100%;
+  background-color: #651fff; }
+
+#navDrop {
   background-color: #651fff;
-}
+  color: white; }
 
 .container-fluid {
-  overflow: hidden;
-}
+  overflow: hidden; }
+
+.card {
+  margin-top: 3%;
+  border: none; }
+
+.card .card-header {
+  background-color: #651fff;
+  color: white;
+  text-transform: uppercase;
+  border-left: 2px solid white;
+  border-right: 1px solid white; }
+
+.row {
+  justify-content: center; }
+  .row .card {
+    margin-top: 9%;
+    height: 96%; }
+    .row .card .card-body h4 {
+      color: white;
+      background-color: #651fff;
+      padding: 2%;
+      text-transform: uppercase; }
+    .row .card .card-body h6 {
+      color: gray;
+      border-bottom: 1px solid gray;
+      padding: 2%;
+      padding-left: 0;
+      width: 90%; }
+    .row .card .card-body p {
+      margin-top: 3%;
+      text-align: justify; }
+    .row .card .card-body a {
+      text-align: justify-all; }
+
+.border-b {
+  padding-bottom: 3%;
+  border-bottom: 1px solid white; }
 
 @media (min-width: 1157px) {
   .container-fluid {
-    height: 89%;
-  }
-}
+    height: 89%; } }
 .frase-entrada {
   position: relative;
   padding: 5%;
   text-transform: uppercase;
-  color: white;
-}
-.frase-entrada h1 span {
-  padding: 0 0.5% 0 0.5%;
-  background-color: white;
-  color: #651fff;
-}
-.frase-entrada .container {
-  padding: 5%;
-  text-align: justify;
-}
+  color: white; }
+  .frase-entrada h1 span {
+    padding: 0.3% 1%; }
+  .frase-entrada .container {
+    padding: 5%;
+    text-align: justify; }
+
+#title-header {
+  width: 40%;
+  margin-top: 5%; }
 
 @media (max-width: 768px) {
   .frase-entrada {
-    padding: 3%;
-  }
-  .frase-entrada > h1 {
-    font-size: 1.9em;
-  }
-  .frase-entrada > div {
-    font-size: 1em;
-  }
-}
+    padding: 3%; }
+    .frase-entrada > h1 {
+      font-size: 1.9em; }
+    .frase-entrada > div {
+      font-size: 1em; } }
 @media (max-width: 414px) {
   .frase-entrada {
-    padding: 1%;
-  }
-  .frase-entrada > h1 {
-    font-size: 1.3em;
-  }
-  .frase-entrada > div {
-    font-size: 0.7em;
-  }
-}
+    padding: 1%; }
+    .frase-entrada > h1 {
+      font-size: 1.3em; }
+    .frase-entrada > div {
+      font-size: 0.7em; }
+
+  .border-b {
+    border: none; }
+
+  .row .col-sm-4 {
+    width: 96%;
+    padding-bottom: 2%;
+    border-bottom: 2px solid white; }
+  .row .card {
+    margin-top: 6%;
+    height: 93%; } }
+@media (max-width: 320px) {
+  .frase-entrada {
+    padding: 3%; }
+    .frase-entrada > h1 {
+      font-size: 1.1em; }
+    .frase-entrada > div {
+      font-size: 0.6em; }
+
+  .row .col-sm-4 {
+    width: 96%;
+    padding-bottom: 2%;
+    border-bottom: 2px solid white; }
+  .row .card {
+    font-size: 0.9em;
+    margin-top: 6%; } }
 
 /*# sourceMappingURL=style.css.map */
