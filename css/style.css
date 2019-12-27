@@ -1,4 +1,4 @@
-#title-header, .frase-entrada .container h1 span, .frase-entrada h1 span, .table thead, #navDrop > a:hover {
+#title-header, .frase-entrada .container h1 span, .frase-entrada h1 span, .table tbody tr:hover, .table thead, #navDrop > a:hover {
   background-color: white;
   color: #651fff;
 }
@@ -70,9 +70,20 @@ html, body {
 
 .table {
   color: white;
+  text-align: center;
+}
+.table tr td:first-child {
+  text-align: left;
 }
 .table thead {
   text-transform: uppercase;
+}
+.table thead tr {
+  margin-bottom: 10%;
+}
+.table tbody tr:hover a {
+  color: #651fff;
+  text-decoration: overline;
 }
 .table tbody a {
   color: white;
@@ -154,6 +165,10 @@ html, body {
   .row .card {
     font-size: 0.9em;
     margin-top: 6%;
+  }
+
+  .table {
+    font-size: 0.8em;
   }
 }
 

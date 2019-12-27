@@ -82,13 +82,31 @@ html, body {
 
 .table {
   color: white;
+  text-align: center;
+
+  tr td:first-child {
+    text-align: left;
+  }
 
   thead {
     @extend %invert-text_color-background_color;
     text-transform: uppercase;
+    
+    tr {
+      margin-bottom: 10%;
+    }
   }
 
   tbody {
+
+    tr:hover {
+      @extend %invert-text_color-background_color;
+
+      a {
+        color: $color_background;
+        text-decoration: overline;
+      }
+    }
     a {
       color: white;
     }
@@ -188,5 +206,9 @@ html, body {
       font-size: 0.9em;
       margin-top: 6%;
     }
+  }
+
+  .table {
+    font-size: .8em;
   }
 }
