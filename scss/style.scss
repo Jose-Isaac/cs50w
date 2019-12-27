@@ -15,7 +15,10 @@ html, body {
 
 #navDrop {
     background-color: $color_background;
-    color: white;
+
+    a {
+      color: white;
+    }
 }
 
 #navDrop > a:hover {
@@ -75,6 +78,21 @@ html, body {
 .border-b {
     padding-bottom: 3%;
     border-bottom: 1px solid white;
+}
+
+.table {
+  color: white;
+
+  thead {
+    @extend %invert-text_color-background_color;
+    text-transform: uppercase;
+  }
+
+  tbody {
+    a {
+      color: white;
+    }
+  }
 }
 
 @media (min-width:1157px) {
