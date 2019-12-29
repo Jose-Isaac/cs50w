@@ -1,108 +1,108 @@
 $color_background: #651fff;
 
 %invert-text_color-background_color {
-    background-color: white;
-    color: $color_background; 
+  background-color: white;
+  color: $color_background;
 }
 
-html, body {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $color_background;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color_background;
 }
 
 #navDrop {
-    background-color: $color_background;
+  background-color: $color_background;
 
-    a {
-      color: white;
-    }
+  a {
+    color: white;
+  }
 }
 
 #navDrop > a:hover {
-    @extend %invert-text_color-background_color;
+  @extend %invert-text_color-background_color;
 }
 .container-fluid {
   overflow: hidden;
 }
 
 .card {
-    margin-top: 3%;
-    border: none;
+  margin-top: 3%;
+  border: none;
 }
 
 .card .card-header {
-    background-color: $color_background;
-    color: white;
-    text-transform: uppercase;
-    border-left: 2px solid white;
-    border-right: 1px solid white;
+  background-color: $color_background;
+  color: white;
+  text-transform: uppercase;
+  border-left: 2px solid white;
+  border-right: 1px solid white;
 }
 
 .row {
-    justify-content: center;
-    .card {
-        margin-top: 9%;
-        height: 96%;
-        
-        .card-body {
-            h4 {
-                color: white;
-                background-color: $color_background;
-                padding: 2%;
-                text-transform: uppercase;
-            }
-            
-            h6 {
-                color: $color_background;
-                border-bottom: 1px solid $color_background;
-                padding: 2%;
-                padding-left: 0;
-                width: 90%;
-            }
-            
-            p {
-                color: $color_background;
-                margin-top: 3%;
-                text-align: justify;
-            }
-            
-            span { 
-                color: $color_background;
-                display: block;
-                font-size: .85em;
-                padding: .5%;
-                line-height: 1.6em;
-                    
-                a {
-                    color: $color_background;
-                    border-left: 1px solid $color_background;
-                    padding: .5%;
-                }
-                
-                    
-                a:hover {
-                    border-bottom: 1px solid $color_background;
-                   border-top: 1px solid $color_background;
-                }
-             }
-                
-             span:nth-child(2) {
-                font-size: 1em;
-             }
+  justify-content: center;
+  .card {
+    margin-top: 9%;
+    height: 96%;
+
+    .card-body {
+      h4 {
+        color: white;
+        background-color: $color_background;
+        padding: 2%;
+        text-transform: uppercase;
+      }
+
+      h6 {
+        color: $color_background;
+        border-bottom: 1px solid $color_background;
+        padding: 2%;
+        padding-left: 0;
+        width: 90%;
+      }
+
+      p {
+        color: $color_background;
+        margin-top: 3%;
+        text-align: justify;
+      }
+
+      span {
+        color: $color_background;
+        display: block;
+        font-size: 0.85em;
+        padding: 0.5%;
+        line-height: 1.6em;
+
+        a {
+          color: $color_background;
+          border-left: 1px solid $color_background;
+          padding: 0.5%;
         }
+
+        a:hover {
+          border-bottom: 1px solid $color_background;
+          border-top: 1px solid $color_background;
+        }
+      }
+
+      span:nth-child(2) {
+        font-size: 1em;
+      }
     }
+  }
 }
 
 form {
-    margin-top: 16%;
-    text-align: center;
-    .form-row {
-        justify-content: center;
-        color: white;   
-    }
+  margin-top: 16%;
+  text-align: center;
+  .form-row {
+    justify-content: center;
+    color: white;
+  }
 }
 
 .table {
@@ -116,14 +116,13 @@ form {
   thead {
     @extend %invert-text_color-background_color;
     text-transform: uppercase;
-    
+
     tr {
       margin-bottom: 10%;
     }
   }
 
   tbody {
-
     tr:hover {
       @extend %invert-text_color-background_color;
 
@@ -141,9 +140,9 @@ form {
 .frase-entrada {
   position: relative;
   padding: 5%;
-  text-transform: uppercase;
   color: white;
   h1 {
+    text-transform: uppercase;
     span {
       @extend %invert-text_color-background_color;
       padding: 0.3% 1%;
@@ -151,95 +150,112 @@ form {
   }
   .container {
     padding: 5%;
-    text-transform: uppercase;
     color: white;
     h1 {
-         span {
-            @extend %invert-text_color-background_color;
-            padding: .3% 1%;  
-        }
+      span {
+        @extend %invert-text_color-background_color;
+        padding: 0.3% 1%;
+      }
+    }
+  }
+}
+
+#text-entrada {
+  text-align: justify;
+  font-size: 1.35em;
+  line-height: 2em;
+}
+#title-header {
+  @extend %invert-text_color-background_color;
+  width: 40%;
+  margin-top: 5%;
+}
+
+footer {
+  color: white;
+  padding: 0.5%;
+
+  a {
+    @extend %invert-text_color-background_color;
+    padding: 0.5%;
+  }
+
+  a:hover {
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: $color_background;
+  }
+}
+
+@media (min-width: 1157px) {
+  .container-fluid {
+    height: 89%;
+  }
+}
+
+@media (max-width: 768px) {
+  .frase-entrada {
+    padding: 3%;
+    > h1 {
+      font-size: 1.9em;
     }
 
     > div {
       font-size: 1em;
     }
   }
-}
 
-#title-header {
-    @extend %invert-text_color-background_color;
-    width: 40%;
-    margin-top: 5%;
-}
-
-footer {
-    color: white;
-    padding: .5%;
-    
-    a {
-        @extend %invert-text_color-background_color;
-        padding: .5%;
-    }
-
-    a:hover {
-      text-decoration: none;
-      font-weight: 500;
-      color: $color_background;
-    }
-}
-
-@media (min-width:1157px) {
-    .container-fluid {
-        height: 89%;
-    }
-}
-
-@media (max-width:768px) {
-    .frase-entrada {
-        padding: 3%;
-        > h1 {
-            font-size: 1.9em;   
-        }
-        
-        > div {
-            font-size: 1em;
-        }
-    }
-
-    .card {
-      margin-top: 6%;
-      height: 93%;
-    }
+  .card {
+    margin-top: 6%;
+    height: 93%;
+  }
 }
 
 @media (max-width: 414px) {
-    
-    .frase-entrada {
-        margin-bottom: 0;
+  .frase-entrada {
+    h1 {
+      font-size: 1.4em;
     }
-    .row {
-        border-bottom: none;
-        .col-sm-4 {
-            width: 96%;
-            padding-bottom: 4%;
-            border-bottom: 2px solid white;
-        }
 
-        .card {
-            font-size: 0.9em;
-            margin-top: 5%;
-        }
+    div {
+      font-size: 0.7em;
+      line-height: 1.8em;
     }
+  }
+  .row {
+    border-bottom: none;
+    .col-sm-4 {
+      width: 96%;
+      padding-bottom: 4%;
+      border-bottom: 2px solid white;
+    }
+
+    .card {
+      font-size: 0.9em;
+      margin-top: 5%;
+    }
+  }
 }
 
-@media (max-width:375px) {
-    .row {
-        font-size: 1em;
+@media (max-width: 375px) {
+  .frase-entrada {
+    h1 {
+      font-size: 1.2em;
     }
-    
-    .card-header {
-        font-size: .8em;
+
+    div {
+      font-size: 0.7em;
     }
+  }
+
+  .row {
+    font-size: 1em;
+  }
+
+  .card-header {
+    font-size: 0.8em;
+  }
 }
 
 @media (max-width: 320px) {
@@ -268,6 +284,6 @@ footer {
   }
 
   .table {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 }
