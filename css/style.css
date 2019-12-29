@@ -1,4 +1,4 @@
-#title-header, .frase-entrada .container h1 span, .frase-entrada h1 span, .table tbody tr:hover, .table thead, #navDrop > a:hover {
+footer a, #title-header, .frase-entrada .container h1 span, .frase-entrada h1 span, .table tbody tr:hover, .table thead, #navDrop > a:hover {
   background-color: white;
   color: #651fff;
 }
@@ -49,23 +49,44 @@ html, body {
   text-transform: uppercase;
 }
 .row .card .card-body h6 {
-  color: gray;
-  border-bottom: 1px solid gray;
+  color: #651fff;
+  border-bottom: 1px solid #651fff;
   padding: 2%;
   padding-left: 0;
   width: 90%;
 }
 .row .card .card-body p {
+  color: #651fff;
   margin-top: 3%;
   text-align: justify;
 }
-.row .card .card-body a {
-  text-align: justify-all;
+.row .card .card-body span {
+  color: #651fff;
+  display: block;
+  font-size: 0.85em;
+  padding: 0.5%;
+  line-height: 1.6em;
+}
+.row .card .card-body span a {
+  color: #651fff;
+  border-left: 1px solid #651fff;
+  padding: 0.5%;
+}
+.row .card .card-body span a:hover {
+  border-bottom: 1px solid #651fff;
+  border-top: 1px solid #651fff;
+}
+.row .card .card-body span:nth-child(2) {
+  font-size: 1em;
 }
 
-.border-b {
-  padding-bottom: 3%;
-  border-bottom: 1px solid white;
+form {
+  margin-top: 16%;
+  text-align: center;
+}
+form .form-row {
+  justify-content: center;
+  color: white;
 }
 
 .table {
@@ -89,21 +110,6 @@ html, body {
   color: white;
 }
 
-@media (min-width: 1157px) {
-  .container-fluid {
-    height: 89%;
-  }
-}
-.border-b {
-  padding-bottom: 3%;
-  border-bottom: 1px solid white;
-}
-
-@media (min-width: 1157px) {
-  .container-fluid {
-    height: 89%;
-  }
-}
 .frase-entrada {
   position: relative;
   padding: 5%;
@@ -130,6 +136,24 @@ html, body {
   margin-top: 5%;
 }
 
+footer {
+  color: white;
+  padding: 0.5%;
+}
+footer a {
+  padding: 0.5%;
+}
+footer a:hover {
+  text-decoration: none;
+  font-weight: 500;
+  color: #651fff;
+}
+
+@media (min-width: 1157px) {
+  .container-fluid {
+    height: 89%;
+  }
+}
 @media (max-width: 768px) {
   .frase-entrada {
     padding: 3%;
@@ -144,6 +168,33 @@ html, body {
   .card {
     margin-top: 6%;
     height: 93%;
+  }
+}
+@media (max-width: 414px) {
+  .frase-entrada {
+    margin-bottom: 0;
+  }
+
+  .row {
+    border-bottom: none;
+  }
+  .row .col-sm-4 {
+    width: 96%;
+    padding-bottom: 4%;
+    border-bottom: 2px solid white;
+  }
+  .row .card {
+    font-size: 0.9em;
+    margin-top: 5%;
+  }
+}
+@media (max-width: 375px) {
+  .row {
+    font-size: 1em;
+  }
+
+  .card-header {
+    font-size: 0.8em;
   }
 }
 @media (max-width: 320px) {

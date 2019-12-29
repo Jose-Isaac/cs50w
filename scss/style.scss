@@ -56,28 +56,53 @@ html, body {
             }
             
             h6 {
-                color: gray;
-                border-bottom: 1px solid gray;
+                color: $color_background;
+                border-bottom: 1px solid $color_background;
                 padding: 2%;
                 padding-left: 0;
                 width: 90%;
             }
             
             p {
+                color: $color_background;
                 margin-top: 3%;
                 text-align: justify;
             }
             
-            a {
-                text-align:justify-all;
-            }
+            span { 
+                color: $color_background;
+                display: block;
+                font-size: .85em;
+                padding: .5%;
+                line-height: 1.6em;
+                    
+                a {
+                    color: $color_background;
+                    border-left: 1px solid $color_background;
+                    padding: .5%;
+                }
+                
+                    
+                a:hover {
+                    border-bottom: 1px solid $color_background;
+                   border-top: 1px solid $color_background;
+                }
+             }
+                
+             span:nth-child(2) {
+                font-size: 1em;
+             }
         }
     }
 }
 
-.border-b {
-    padding-bottom: 3%;
-    border-bottom: 1px solid white;
+form {
+    margin-top: 16%;
+    text-align: center;
+    .form-row {
+        justify-content: center;
+        color: white;   
+    }
 }
 
 .table {
@@ -110,24 +135,6 @@ html, body {
     a {
       color: white;
     }
-  }
-}
-
-@media (min-width:1157px) {
-    .container-fluid {
-        height: 89%;
-    }
-}
-
-
-.border-b {
-  padding-bottom: 3%;
-  border-bottom: 1px solid white;
-}
-
-@media (min-width: 1157px) {
-  .container-fluid {
-    height: 89%;
   }
 }
 
@@ -165,6 +172,28 @@ html, body {
     margin-top: 5%;
 }
 
+footer {
+    color: white;
+    padding: .5%;
+    
+    a {
+        @extend %invert-text_color-background_color;
+        padding: .5%;
+    }
+
+    a:hover {
+      text-decoration: none;
+      font-weight: 500;
+      color: $color_background;
+    }
+}
+
+@media (min-width:1157px) {
+    .container-fluid {
+        height: 89%;
+    }
+}
+
 @media (max-width:768px) {
     .frase-entrada {
         padding: 3%;
@@ -180,6 +209,36 @@ html, body {
     .card {
       margin-top: 6%;
       height: 93%;
+    }
+}
+
+@media (max-width: 414px) {
+    
+    .frase-entrada {
+        margin-bottom: 0;
+    }
+    .row {
+        border-bottom: none;
+        .col-sm-4 {
+            width: 96%;
+            padding-bottom: 4%;
+            border-bottom: 2px solid white;
+        }
+
+        .card {
+            font-size: 0.9em;
+            margin-top: 5%;
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .row {
+        font-size: 1em;
+    }
+    
+    .card-header {
+        font-size: .8em;
     }
 }
 
